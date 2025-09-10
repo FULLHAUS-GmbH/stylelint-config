@@ -20,6 +20,14 @@ export default {
         ],
       },
     ],
+    // TODO: drop after update with fix in stylelint-config-recommended-scss
+    // https://github.com/stylelint-scss/stylelint-config-recommended-scss/pull/365
+    'nesting-selector-no-missing-scoping-root': [
+      true,
+      {
+        ignoreAtRules: ['mixin'],
+      },
+    ],
     'order/properties-alphabetical-order': true,
     'order/properties-order': [],
     'plugin/use-logical-properties-and-values': [
