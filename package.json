@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "@fullhaus/eslint-config": "^0.2.0",
+    "@types/node": "^24.3.1",
     "stylelint": "^16.24.0"
   },
   "peerDependencies": {
