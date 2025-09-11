@@ -5,9 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "lint": "eslint index.js",
-    "lint:fix": "eslint index.js --fix",
-    "test": "pnpm lint && node index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "node --test",
     "version": "pnpm run test"
   },
   "author": "FULLHAUS GmbH <development@fullhaus.de>",

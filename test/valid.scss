@@ -1,0 +1,51 @@
+@use 'sass:string';
+
+$primary-color: #038;
+$spacing: 0.5rem;
+
+@function custom-prop($name) {
+    @return string.unquote('--fh-#{$name}');
+}
+
+@mixin button($bg-color) {
+    background: $bg-color;
+    border: 1px solid #000;
+    border-radius: 0.25rem;
+    color: custom-prop(white);
+    display: inline-flex;
+    font-family: 'Roboto', sans-serif;
+    inline-size: 12rem;
+    justify-content: center;
+    margin-block-start: $spacing;
+    overflow-x: auto;
+    overflow-y: auto;
+    padding-block: $spacing;
+    padding-inline: $spacing;
+    text-align: center;
+
+    &::before {
+        block-size: 1rem;
+        content: '';
+        display: inline-block;
+        inline-size: 1rem;
+        margin-inline-end: 0.25rem;
+    }
+}
+
+.button__icon--large {
+    @include button($primary-color);
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.alert {
+    background: rgba($primary-color, 0.8);
+    block-size: 100vi;
+    color: #000;
+}
+
+svg {
+    fill: currentColor;
+}
