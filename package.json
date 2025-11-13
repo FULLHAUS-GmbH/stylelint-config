@@ -1,25 +1,9 @@
 {
   "name": "@fullhaus/stylelint-config",
-  "version": "0.2.1",
   "description": "Default stylelint configuration for FULLHAUS projects.",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "lint": "eslint index.js",
-    "lint:fix": "eslint index.js --fix",
-    "test": "pnpm lint && node index.js",
-    "version": "pnpm run test"
-  },
+  "version": "0.2.2",
   "author": "FULLHAUS GmbH <development@fullhaus.de>",
-  "license": "UNLICENSED",
-  "files": [
-    "index.js"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/FULLHAUS-GmbH/eslint-config.git"
-  },
-  "packageManager": "pnpm@10.12.4",
+  "bugs": "https://github.com/FULLHAUS-GmbH/stylelint-config/issues",
   "dependencies": {
     "@stylistic/stylelint-plugin": "^4.0.0",
     "stylelint-config-recommended-scss": "^16.0.0",
@@ -28,9 +12,47 @@
   },
   "devDependencies": {
     "@fullhaus/eslint-config": "^0.2.0",
+    "eslint": "^9.39.1",
     "stylelint": "^16.24.0"
   },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "require": "./index.js"
+    }
+  },
+  "files": [
+    "index.js",
+    "LICENSE"
+  ],
+  "homepage": "https://github.com/FULLHAUS-GmbH/stylelint-config#readme",
+  "keywords": [
+    "code-style",
+    "css",
+    "fullhaus",
+    "linter",
+    "scss",
+    "stylelint",
+    "stylelint-config"
+  ],
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "packageManager": "pnpm@10.12.4",
   "peerDependencies": {
     "stylelint": ">=16"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "FULLHAUS-GmbH/stylelint-config.git",
+  "scripts": {
+    "lint": "eslint index.js",
+    "lint:fix": "eslint index.js --fix",
+    "test": "pnpm lint && node index.js",
+    "version": "pnpm run test"
+  },
+  "type": "module"
 }
