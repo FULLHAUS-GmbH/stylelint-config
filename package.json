@@ -44,6 +44,13 @@
   "peerDependencies": {
     "stylelint": "^17.0.0"
   },
+  "pnpm": {
+    "peerDependencyRules": {
+      "allowedVersions": {
+        "stylelint": "17"
+      }
+    }
+  },
   "publishConfig": {
     "access": "public"
   },
