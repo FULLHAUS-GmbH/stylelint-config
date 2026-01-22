@@ -1,7 +1,7 @@
 {
   "name": "@fullhaus/stylelint-config",
   "description": "Default stylelint configuration for FULLHAUS projects.",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "author": "FULLHAUS GmbH <development@fullhaus.de>",
   "bugs": "https://github.com/FULLHAUS-GmbH/stylelint-config/issues",
   "dependencies": {
