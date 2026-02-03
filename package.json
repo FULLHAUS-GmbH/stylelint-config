@@ -5,15 +5,15 @@
   "author": "FULLHAUS GmbH <development@fullhaus.de>",
   "bugs": "https://github.com/FULLHAUS-GmbH/stylelint-config/issues",
   "dependencies": {
-    "@stylistic/stylelint-plugin": "^5.0.0",
+    "@stylistic/stylelint-plugin": "^5.0.1",
     "stylelint-config-recommended-scss": "^17.0.0",
     "stylelint-order": "^7.0.1",
-    "stylelint-plugin-logical-css": "^1.2.3"
+    "stylelint-plugin-logical-css": "^1.3.0"
   },
   "devDependencies": {
     "@fullhaus/eslint-config": "^0.4.0",
     "eslint": "^9.39.2",
-    "stylelint": "^17.0.0"
+    "stylelint": "^17.1.0"
   },
   "engines": {
     "node": ">=22.0.0"
@@ -43,13 +43,6 @@
   "packageManager": "pnpm@10.28.1",
   "peerDependencies": {
     "stylelint": "^17.0.0"
-  },
-  "pnpm": {
-    "peerDependencyRules": {
-      "allowedVersions": {
-        "stylelint": "17"
-      }
-    }
   },
   "publishConfig": {
     "access": "public"
