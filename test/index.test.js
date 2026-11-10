@@ -142,8 +142,16 @@ describe('logical-css', () => {
     await assertReports('.a {\n    margin-top: 0;\n}\n', 'logical-css/require-logical-properties', 'warning');
   });
 
-  it('ignores overflow-x and overflow-y', async () => {
-    await assertValid('.a {\n    overflow-x: hidden;\n    overflow-y: auto;\n}\n');
+  it('warns about overflow-x and overflow-y', async () => {
+    const { warnings } = await lint('.a {\n    overflow-x: hidden;\n    overflow-y: auto;\n}\n');
+
+    assert.deepEqual(
+      warnings.map((w) => [w.rule, w.severity]),
+      [
+        ['logical-css/require-logical-properties', 'warning'],
+        ['logical-css/require-logical-properties', 'warning'],
+      ],
+    );
   });
 
   it('warns about physical keywords', async () => {

@@ -33,10 +33,6 @@ export default {
       true,
       {
         'severity': 'warning',
-        'ignore': [
-          'overflow-x',
-          'overflow-y',
-        ],
       },
     ],
     'logical-css/require-logical-units': [
