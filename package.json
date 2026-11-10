@@ -51,7 +51,7 @@
   "scripts": {
     "lint": "eslint index.js",
     "lint:fix": "eslint index.js --fix",
-    "test": "pnpm lint && node index.js",
+    "test": "pnpm lint && node --test",
     "version": "pnpm run test"
   },
   "type": "module"
