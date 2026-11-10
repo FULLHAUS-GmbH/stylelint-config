@@ -12,6 +12,9 @@ export default {
     '@stylistic/indentation': 4,
     '@stylistic/number-leading-zero': 'always',
     '@stylistic/string-quotes': 'single',
+    '@stylistic/scss/indentation': 4,
+    '@stylistic/scss/number-leading-zero': 'always',
+    '@stylistic/scss/string-quotes': 'single',
     'color-named': [
       'never',
       {
@@ -20,9 +23,13 @@ export default {
         ],
       },
     ],
-    'order/properties-alphabetical-order': true,
-    'order/properties-order': [],
-    'plugin/use-logical-properties-and-values': [
+    'logical-css/require-logical-keywords': [
+      true,
+      {
+        'severity': 'warning',
+      },
+    ],
+    'logical-css/require-logical-properties': [
       true,
       {
         'severity': 'warning',
@@ -32,12 +39,14 @@ export default {
         ],
       },
     ],
-    'plugin/use-logical-units': [
+    'logical-css/require-logical-units': [
       true,
       {
         'severity': 'warning',
       },
     ],
+    'order/properties-alphabetical-order': true,
+    'order/properties-order': [],
     'selector-class-pattern': [
       '^[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$',
       {
